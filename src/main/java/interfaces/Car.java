@@ -35,7 +35,8 @@ public class Car implements Vehicle , Alarm{
         // custom implementation
         //return ""; or
         //return Vehicle.super.turnAlarmOn(); or
-        return Alarm.super.turnAlarmOn();
+        //return Alarm.super.turnAlarmOn(); or
+        return Vehicle.super.turnAlarmOn() + " " + Alarm.super.turnAlarmOn();
 
     }
 
@@ -44,7 +45,8 @@ public class Car implements Vehicle , Alarm{
         // custom implementation
         //return ""; or
         //return Vehicle.super.turnAlarmOff(); or
-        return Alarm.super.turnAlarmOn();
+        //return Alarm.super.turnAlarmOn(); or
+        return Vehicle.super.turnAlarmOff() + " " + Alarm.super.turnAlarmOff();
     }
 
 

@@ -5,6 +5,7 @@ package interfaces;
  */
 public interface Vehicle {
 
+
     String getBrand();
 
     String speedUp();
