@@ -5,7 +5,6 @@ package interfaces;
  */
 public abstract class MyAbstractClass implements Foo{
 
-
     @Override
     public void publicMethod_1() {
         protectedMethod(); // you can call protected method here
