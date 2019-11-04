@@ -52,9 +52,10 @@ public class ListTest {
 
     @org.junit.jupiter.api.Test
     public void newApproach() {
-        assertThrows(NumberFormatException.class, () ->{
-            Integer.parseInt("foo");
+        NumberFormatException exception= assertThrows(NumberFormatException.class, () ->{
+            Integer.parseInt("42");
         } );
 
+        assertEquals("For input string: \"foo\"",exception.getMessage());
     }
 }
